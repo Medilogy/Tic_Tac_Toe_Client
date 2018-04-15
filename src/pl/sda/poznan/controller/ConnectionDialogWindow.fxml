@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<DialogPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="pl.sda.poznan.controller.ConnectionDialogController"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <headerText>
+        Aby rozpocząć grę, usypełnij następujące dane:
+    </headerText>
+    <content>
+        <GridPane>
+            <Label text="Server Address: " GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+            <TextField fx:id="serverAddressTextField" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+            <Label text="Player Name: " GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+            <TextField fx:id="playerNameTextField" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+        </GridPane>
+    </content>
+</DialogPane>
